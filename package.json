@@ -1,5 +1,6 @@
 {
   "name": "it-incubator-todolist-ts",
+  "homepage": "https://MalevichDi2910.github.io/task-tracker",
   "jest": {
     "moduleNameMapper": {
       "axios": "axios/dist/node/axios.cjs"
@@ -11,6 +12,7 @@
     "@babel/runtime": "^7.23.6",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
+    "@formkit/auto-animate": "^0.8.1",
     "@mui/icons-material": "^5.15.2",
     "@mui/material": "^5.15.2",
     "@reduxjs/toolkit": "^2.0.1",
@@ -24,6 +26,7 @@
     "@types/uuid": "^9.0.7",
     "axios": "^1.6.3",
     "formik": "^2.4.5",
+    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^9.0.4",
@@ -34,6 +37,8 @@
     "uuid": "^9.0.1"
   },
   "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
